@@ -2,8 +2,10 @@
 
 Robinson Asset Management Pte. Ltd. 中英文静态网站。
 
-- 英文首页：https://freyr-ai.github.io/web-robinson/
-- 中文页面：https://freyr-ai.github.io/web-robinson/zh/
+- 英文首页：https://www.token-exchange-ai.com/web-robinson/
+- 中文页面：https://www.token-exchange-ai.com/web-robinson/zh/
+
+该项目继承 Freyr-AI 组织已有的 GitHub Pages 自定义域名。`freyr-ai.github.io/web-robinson/` 会跳转到上述域名。
 
 ## 部署与维护
 
