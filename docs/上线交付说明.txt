@@ -1,0 +1,58 @@
+Robinson 网站上线交付说明
+
+一 交付范围
+本包为当前已发布网站的静态源码，中英文页面均已包含。
+参考地址：https://robinson-compute-infrastructure.f18621719096.chatgpt.site/
+版本识别：efd28e93bb99ac3aeda266988a41373611d30245
+整理日期：2026年11月11日
+
+二 文件结构
+website/index.html     英文首页，默认语言 EN
+website/zh/index.html  中文页面，路径 /zh/
+网站文案_EN.txt        英文文案核对稿
+网站文案_CN.txt        中文文案核对稿
+交付校验.json          源文件 SHA256 校验值
+
+三 上线方式
+这是纯静态网站，无需安装依赖或执行构建。将 website 文件夹内的内容部署到网站根目录，保持 zh/index.html 路径。
+可部署至企业现有静态托管、Nginx、对象存储静态网站或 CDN 托管。
+默认首页设为 index.html，并支持 /zh/ 目录首页。不要把所有路径强制重写为英文首页。
+中英文切换采用根路径 / 和 /zh/，适合独立域名根目录部署。如部署到子目录，需同步修改两页的语言切换路径。
+中文、英文页面均使用 UTF-8 编码。
+域名解析、HTTPS 证书和企业托管账号由上线同事配置。
+
+四 已确认的内容与交互
+默认打开英文页面。
+右上角 CN / EN 可切换语言，当前语言有选中状态。
+Logo 为 Robinson，无末尾圆点；顶部及页脚保持一致。
+标题和按钮无箭头，英文正文标题不加末尾标点。
+About Robinson、Our Business、End-to-End Lifecycle 栏目标签保留。
+关于公司板块中 Robinson aligns resources... 句子独立成段。
+联系区域英文标签为 Build the Next Connection，主标题为 Start with a Real Need。
+中文主标题为 让合作从一个具体需求开始，按钮为 联系我们。
+英文按钮为 Contact Us。
+联系按钮和导航联系入口均指向 mailto:contact-robinson@robinsonmgt.com。
+按钮下不重复展示邮箱。邮箱链接打开访客默认邮件应用，不经过网站发送。
+页脚 Logo、业务说明和版权信息按底端对齐。
+资产持有按未来发展方向表述。
+
+五 维护说明
+CSS 内嵌于每页的 style 标签中；无外部图片、字体服务、第三方 JavaScript 依赖、数据库或服务端。页面含原生 JavaScript，用于滚动渐入动效。
+目前两种语言分别维护，调整共用样式或结构时需同步两份 HTML。
+部分样式以追加规则形式覆盖早期规则，维护时可重构合并，但需核对最终显示效果。
+如迁移到 React、Vue 或企业组件体系，可按 header、hero、about、business、lifecycle、future、contact、footer 拆分；无需改变已确认文案。
+文件中的系统字体栈会随设备选择可用字体。
+
+首屏背景网格包含 10 秒循环网格流动及 16 秒单程透视变化；系统开启减少动态效果时关闭动画。
+
+页脚版权已更新为 © 2026 Robinson Asset Management Pte. Ltd.。新增首屏光线扫描、板块滚动渐入和按钮及业务模块悬停反馈。
+
+六 上线验收
+核对桌面及手机显示，特别是英文长标题换行、导航和页脚对齐。
+检查默认 EN、CN / EN 往返切换和各导航锚点。
+点击 Contact Us / 联系我们，确认收件人为指定邮箱。
+确认 HTTPS、域名根目录及 /zh/ 均能正常打开；刷新中文页面后仍保留中文。
+检查页面标题、描述、语言标记和无重复文案。
+当前已做源码结构、文案和链接检查；本次交付未完成最终浏览器视觉验收，请上线前在目标环境检查。
+如需搜索引擎收录，上线同事需基于最终域名配置 canonical、hreflang、robots.txt 和 sitemap.xml。
+本包不含原托管平台的项目配置、账号信息或 Git 历史，可独立部署。
