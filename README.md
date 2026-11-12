@@ -2,10 +2,10 @@
 
 Robinson Asset Management Pte. Ltd. 中英文静态网站。
 
-- 英文首页：https://www.token-exchange-ai.com/web-robinson/
-- 中文页面：https://www.token-exchange-ai.com/web-robinson/zh/
+- 英文首页：https://www.robinsonmgt.com/
+- 中文页面：https://www.robinsonmgt.com/zh/
 
-该项目继承 Freyr-AI 组织已有的 GitHub Pages 自定义域名。`freyr-ai.github.io/web-robinson/` 会跳转到上述域名。
+该项目通过 `CNAME` 配置正式域名 `www.robinsonmgt.com`。
 
 ## 部署与维护
 
@@ -19,3 +19,5 @@ Robinson Asset Management Pte. Ltd. 中英文静态网站。
 原交付包的 SHA256 已核验。为兼容 GitHub Pages 项目路径，两个页面的语言切换链接已改为相对路径，因此当前 HTML 的校验值与原交付校验文件不同。文案、样式及其他交互保持原样。
 
 CSS 与 JavaScript 均内嵌在 HTML 中，共用样式调整时需同步两种语言。联系入口指向 `contact-robinson@robinsonmgt.com`。
+
+顶部 Logo 与浏览器图标位于 `assets/`。联系链接使用 Cloudflare 支持的 `email_off` 标记，避免被改写为依赖解码脚本的邮件保护地址。
