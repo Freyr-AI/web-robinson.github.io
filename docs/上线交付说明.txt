@@ -3,12 +3,14 @@ Robinson 网站上线交付说明
 一 交付范围
 本包为当前已发布网站的静态源码，中英文页面均已包含。
 参考地址：https://robinson-compute-infrastructure.f18621719096.chatgpt.site/
-版本识别：efd28e93bb99ac3aeda266988a41373611d30245
-整理日期：2026年11月11日
+版本：V17
+版本识别：2b3ab2e9fd89f848d6f826311d46ee72f31f8a68
+整理日期：2026年11月12日
 
 二 文件结构
 website/index.html     英文首页，默认语言 EN
 website/zh/index.html  中文页面，路径 /zh/
+website/assets/       Logo 与网站图标，必须随网站一起上传
 网站文案_EN.txt        英文文案核对稿
 网站文案_CN.txt        中文文案核对稿
 交付校验.json          源文件 SHA256 校验值
@@ -20,6 +22,8 @@ website/zh/index.html  中文页面，路径 /zh/
 中英文切换采用根路径 / 和 /zh/，适合独立域名根目录部署。如部署到子目录，需同步修改两页的语言切换路径。
 中文、英文页面均使用 UTF-8 编码。
 域名解析、HTTPS 证书和企业托管账号由上线同事配置。
+本地预览：进入 website 目录后运行 python3 -m http.server 8080，通过 http://localhost:8080/ 查看英文，通过 http://localhost:8080/zh/ 查看中文。建议通过 HTTP 预览，直接双击 HTML 时根路径资源及语言切换可能无法正常加载。
+正式域名尚未在本包中设定，前端同事需向负责人确认。
 
 四 已确认的内容与交互
 默认打开英文页面。
@@ -37,12 +41,13 @@ About Robinson、Our Business、End-to-End Lifecycle 栏目标签保留。
 资产持有按未来发展方向表述。
 
 五 维护说明
-CSS 内嵌于每页的 style 标签中；无外部图片、字体服务、第三方 JavaScript 依赖、数据库或服务端。页面含原生 JavaScript，用于滚动渐入动效。
+CSS 内嵌于每页的 style 标签中；包含用户提供的 Logo 与网站图标，位于 assets 文件夹；无外部图片服务、字体服务、第三方 JavaScript 依赖、数据库或服务端。页面含原生 JavaScript，用于滚动渐入动效。
 目前两种语言分别维护，调整共用样式或结构时需同步两份 HTML。
 部分样式以追加规则形式覆盖早期规则，维护时可重构合并，但需核对最终显示效果。
-如迁移到 React、Vue 或企业组件体系，可按 header、hero、about、business、lifecycle、future、contact、footer 拆分；无需改变已确认文案。
+如迁移到 React、Vue 或企业组件体系，可按 header、hero、about、business、lifecycle、future、contact、footer 拆分；文案以本包 HTML 及文案核对稿为准，不要根据旧交付包再次替换。
 文件中的系统字体栈会随设备选择可用字体。
 
+保留原有全生命周期服务框架；设备相关板块改为配套采购与交付，不直接表述服务器。最新确认：保留“面向未来的产业投资与资产管理”标题、右侧内容及其他文案，仅将下方正文调整为：在项目开发与运营经验积累的基础上，Robinson 逐步拓展产业投资与资产管理，以长期视角连接项目建设、运营表现与资产价值。英文已同步。文案应与实际经营和交易材料保持一致。
 首屏背景网格包含 10 秒循环网格流动及 16 秒单程透视变化；系统开启减少动态效果时关闭动画。
 
 页脚版权已更新为 © 2026 Robinson Asset Management Pte. Ltd.。新增首屏光线扫描、板块滚动渐入和按钮及业务模块悬停反馈。

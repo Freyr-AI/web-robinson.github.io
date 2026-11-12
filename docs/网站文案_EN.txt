@@ -1,7 +1,5 @@
 Robinson | Compute Infrastructure From Investment to Operations
 
-Robinson
-
 About
 
 Our Business
@@ -32,7 +30,7 @@ Successful compute infrastructure projects require continuity across investment 
 
 Robinson aligns resources and services around each project’s requirements, supporting delivery and long-term operation.
 
-Our services connect investment, construction and operations, with server and supporting equipment supply integrated into project delivery. As our business develops, we plan to explore infrastructure asset ownership and long-term management.
+Our services connect investment, construction and operations, with supporting procurement and delivery integrated into project execution. As our business develops, we plan to explore infrastructure asset ownership and long-term management.
 
 Our Business
 
@@ -52,11 +50,11 @@ We coordinate planning, design, construction, facility configuration and commiss
 
 Planning Coordination / Construction Management / Systems Integration / Commissioning & Handover
 
-Compute Equipment Supply
+Supporting Procurement & Delivery
 
-We support the selection, sourcing and delivery of servers and related equipment, aligning configurations and supply schedules with customer workloads and deployment plans.
+We coordinate the sourcing and delivery of project-related equipment and components, aligning specifications and supply schedules with implementation plans.
 
-Servers & Supporting Equipment / Configuration Alignment / Procurement & Supply / Delivery Coordination
+Requirements Alignment / Procurement Coordination / Supply Scheduling / Delivery Support
 
 Operations & Optimization
 
@@ -90,9 +88,9 @@ Plan improvements, upgrades and expansion as business needs evolve.
 
 Looking Ahead
 
-Building Toward Long-Term Asset Ownership
+Building Toward Industrial Investment and Asset Management
 
-As we build experience in project development and operations, Robinson plans to explore the ownership and long-term management of compute infrastructure assets. This future direction brings together project delivery, operational performance and lasting asset value.
+Building on its experience in project development and operations, Robinson is expanding its activities in industrial investment and asset management, taking a long-term approach to project delivery, operational performance and asset value.
 
 From Project Participation to Long-Term Ownership
 
@@ -102,7 +100,7 @@ Build the Next Connection
 
 Start with a Real Need
 
-Whether you are developing a compute infrastructure project, planning construction and operations, or sourcing servers and supporting equipment, connect with Robinson to explore how we can work together.
+Whether you are developing a compute infrastructure project, planning construction and operations, or coordinating procurement and delivery, connect with Robinson to explore how we can work together.
 
 Contact Us
 
